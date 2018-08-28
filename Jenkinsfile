@@ -18,6 +18,8 @@ node('master') {
 
     stage ('Finish'){
 	    sh 'echo \' ------ \'  >> /tmp/test.txt'
+	    slackSend channel: '#onboarding-quyen', color: 'Red', message: 'Quyền Test Jenkins', teamDomain: 'saleshood', tokenCredentialId: 'Slack'
+
 	}
     
 }
