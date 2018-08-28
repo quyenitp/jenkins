@@ -10,8 +10,8 @@ node('master') {
     stage 'Echo Hello World '
         sh 'echo \'Hello World\' >> /tmp/test.txt'
 
-	stage 'Finish'
-	    sh 'echo \' ------ \' '
+    stage 'Finish'
+        sh 'echo \' ------ \' '
 }
 
 
